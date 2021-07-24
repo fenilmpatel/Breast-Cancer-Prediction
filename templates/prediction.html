@@ -1,0 +1,24 @@
+
+{% extends "layout01.html" %}
+{% block temp %}
+
+
+<div class="content-section">
+{% if prediction_text %} 
+    <div class="alert alert-success" role="alert">
+        This Person Has No Cancer.
+    </div>
+{% else %}
+
+        <div class="alert alert-danger">
+            This Person Has Cancer!! Please Go To Medical and Do Quick Treatment
+    </div>
+
+{% endif %}  
+</div>
+
+
+
+
+   
+{% endblock temp %}
