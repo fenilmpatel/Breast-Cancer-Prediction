@@ -1,10 +1,12 @@
 FROM python:3.7.9-slim-buster
 
+RUN pip install --upgrade pip
+
 ENV app /app
 
 WORKDIR $app
 
-COPY . ./
+COPY ./ ./
 
 RUN pip install -r requirement.txt
  
